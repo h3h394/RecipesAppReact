@@ -11,10 +11,10 @@ export const RecipesState = ({ children }) => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const APP_ID = "9d90c7b6";
-  const APP_KEY = "ad5922d7ab464481cb6c20cc2d182e85";
-  const FIRST_REQ = `https://api.edamam.com/search?q=pizza&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=9`;
-  const URL = `https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}&from=${firstRecipe}&to=${lastRecipe}`;
+  const APP_ID = "170e655e";
+  const APP_KEY = "f2d2c37fc3f0ff8030c2afb667195ec7";
+  const FIRST_REQ = `https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q=pizza&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=9`;
+  const URL = `https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}&from=${firstRecipe}&to=${lastRecipe}`;
 
   const getFirstResults = async () => {
     setLoading(true);
